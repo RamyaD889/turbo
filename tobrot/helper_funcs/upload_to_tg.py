@@ -212,11 +212,9 @@ async def upload_to_gdrive(file_upload, message, messa_ge, g_id):
                 [
                     pyrogram.InlineKeyboardButton(
                         text="ℹ️ Direct Download Link ℹ️", url=f"{tam_link}"
-                    )
-                ],
-                [
+                    ),
                     pyrogram.InlineKeyboardButton(
-                        text="ℹ View Link ℹ", url=f"{tam_link}?a=view"
+                        text="ℹ️ View Link ℹ️", url=f"{tam_link}?a=view/"
                     )
                 ]
             )
