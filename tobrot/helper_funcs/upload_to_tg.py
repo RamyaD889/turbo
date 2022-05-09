@@ -205,13 +205,18 @@ async def upload_to_gdrive(file_upload, message, messa_ge, g_id):
             [pyrogram.InlineKeyboardButton(text="☁️ Google Drive Link ☁️", url=f"{gauti}")]
         )
         if INDEX_LINK:
-            indexurl = f"{INDEX_LINK}/{os.path.basename(file_upload)}?a=view"
+            indexurl = f"{INDEX_LINK}/{os.path.basename(file_upload)}"
             tam_link = requests.utils.requote_uri(indexurl)
             LOGGER.info(tam_link)
             button.append(
                 [
                     pyrogram.InlineKeyboardButton(
-                        text="ℹ️ High Speed Link ℹ️", url=f"{tam_link}"
+                        text="ℹ️ Direct Download Link ℹ️", url=f"{tam_link}"
+                    )
+                ],
+                [
+                    pyrogram.InlineKeyboardButton(
+                        text="ℹ View Link ℹ", url=f"{tam_link}?a=view"
                     )
                 ]
             )
