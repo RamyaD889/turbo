@@ -50,7 +50,7 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
         exit()
 
 # The Telegram API things
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5399707372:AAEnmy53i5gu9HPJHor_QS1gdcAsQcwtoqk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 APP_ID = int(os.environ.get("APP_ID", "2551100"))
 API_HASH = os.environ.get("API_HASH", "e79de98c2b7ac5419f48d2030d60a4ca")
 OWNER_ID = int(os.environ.get("OWNER_ID", "885394844"))
